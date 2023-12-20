@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #0c0c0c;
+}
+.header {
+   position: fixed;
+   top: 0;
+   left:0;
+   width: 108%;
+   padding: 20px 10%;
+   display: flex;
+   background-color: #051129;
+   justify-content: center;
+   z-index: 100;
+}
+
+.logo {
+    text-align: center;
+    width: 120px;
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid white;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-right: 250px;
+}
+
+.navbar a{
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+}
+.navbar a:hover{
+    color: aquamarine;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.img1 {
+    
+    margin-bottom: -350px;
+    height: 280px;
+    width: 350px;
+    border-radius: 50%;
+    margin-top: -150px; /* Adjust the margin-top value */
+    margin-left: 550px;
+    background-clip: padding-box;
+    box-shadow: 0 0 20px 10px purple, 0 0 20px 15px green, 0 0 30px 35px aquamarine;
+}
+.home-content {
+     max-width: 600px;
+    /* Adjust the margin-top value */
+}
+.home-content h3{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+}
+.home-content h3 span{
+    color: aquamarine;
+}
+.home-content h1{
+    color: #fff;
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+.home-content p{
+    font-size: 20px;
+    color: #fff;
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid aquamarine;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aquamarine;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+.home-sci a:hover{
+    background-color: aquamarine;
+    color: #081b29;
+    box-shadow: 0 0 20px aquamarine;
+}
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    text-decoration: none;
+    color:#081b29;
+    background-color: aquamarine;
+    border-radius: 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.btn-box:hover{
+    box-shadow: 0 0 20px purple, 0 0 25px green, 0 0 50px red, 0 0 100px yellow, 0 0 200px aquamarine;
+}
+
+@keyframes slideRight{
+    0%{
+        transform: translate(-100px);
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/*About Me*/
+.about{
+    padding-right: 20px;
+    display: grid;
+    margin-right: 20px;
+    margin-left: 70px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+ .img2{
+    margin-bottom: 0px;
+    height: 280px;
+    width: 350px;
+    border-radius: 50%;
+    margin-left: auto;
+    background-clip: padding-box;
+    box-shadow: 0 0 20px 10px purple, 0 0 20px 15px green, 0 0 30px 35px aquamarine;
+}
+.about-text h2 {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 60px; 
+}
+.about-text h2 span{
+    margin-bottom: 100px;
+    color: aquamarine;
+}
+.about-text h4{
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 0.2;
+    margin: 15px 0 30px;
+}
+.about-text p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 5rem;
+}
+.btn-box1{
+    display: inline-block;
+    padding: 11px 20px;
+    text-decoration: none;
+    color:#081b29;
+    background-color: aquamarine;
+    border-radius: 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600; 
+    margin-top: -100px;
+}
+.btn-box1:hover{
+    box-shadow: 0 0 20px purple, 0 0 25px green, 0 0 50px red, 0 0 100px yellow, 0 0 200px aquamarine;
+} 
+
+/*My Skills*/
+
+.sub-title  {
+    font-size: 60px;
+    text-align: center;
+    display: block;
+    color: #fff; /* Set the color for "My" */
+    margin-top: 80px;
+}
+
+.sub-title span {
+    display: inline-block;
+    text-align: center;
+    color: aquamarine; /* Set the color for "Skills" */
+}
+
+.container1 {
+    box-shadow: 10px  ;
+    background-color: #0c0c0c; /* Background color for the skills section */
+    padding: 40px;
+    text-align: center;
+}
+
+.heading {
+    margin-bottom: 150px;
+    margin-right: 700px;
+    font-size: 35px;
+    color: #fff; /* Set the color for the heading */
+    margin-bottom: 20px;
+}
+
+.Technical-bars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bar {
+    background-color: #081b29; /* Background color for each skill bar */
+    color: #fff; /* Text color for each skill bar */
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 0 10px rgb(105, 105, 232);
+}
+
+.bar i {
+    font-size: 24px; /* Adjust icon size */
+    margin-bottom: 10px;
+}
+
+.progress-line span {
+    height: 10px;
+    background-color: #4CAF50;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: block; /* Ensure the span is a block element */
+}
+
+.html span {
+    width: 90%;
+}
+
+.css span {
+    width: 80%;
+}
+
+.JavaScript span {
+    width: 50%;
+}
+
+.MySQL span {
+    width: 75%;
+}
+
+.java span {
+    width: 70%;
+}
+
+
+/*Education*/
+/* Add these styles to your existing stylesheet or create a new one */
+
+.sub-title1 {
+    font-size: 60px;
+    text-align: center;
+    display: block;
+    color: #fff; /* Set the color for "My" */
+    margin-bottom: 50px;
+    margin-top: 80px; /* Adjust as needed */
+}
+
+.sub-title1 span {
+    display: inline-block;
+    text-align: center;
+    color: aquamarine; /* Set the color for "Skills" */
+}
+
+.Edu {
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.Edu-text {
+    background-color: #081b29;
+    color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: Add hover effect */
+.Edu-text:hover {
+    background-color: #081b29; /* Change the background color on hover */
+    transform: scale(1.02); /* Add a slight scale effect on hover */
+}
+
+/* project*/
+
+#Portfolio {
+    margin-top: 20px;
+}
+
+/* Style the main text container */
+.main-text {
+    background: #0c0c0c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the project title */
+.main-text h2 {
+    font-size: 30px;
+    color: aquamarine;
+}
+
+/* Style the project details */
+.projectheading,
+.projectrole,
+.projectlanguage,
+.projectlanguage1,
+.projectoperating1,
+.projectdic {
+    margin-top: 25px;
+}
+
+.projectheading p,
+.projectrole p,
+.projectlanguage p,
+.projectlanguage1 p,
+.projectoperating1 p,
+.projectdic p {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+}
+
+/* Style the project description */
+.projectdic p {
+    line-height: 1.5;
+}
+.projectheading{
+    background-color:  #4CAF50;
+    border: 3px double yellow;
+    box-shadow: 0 0 15px rgb(105, 105, 232);
+    width: 600px;
+    height: 50px;
+    margin-left: 150px;
+}
+.projectrole{
+    background-color: #4CAF50;
+    border: 3px double yellow;
+    box-shadow: 0 0 15px rgb(105, 105, 232);
+    width: 600px;
+    height: 50px;
+    margin-left: 150px;
+}
+.projectlanguage{
+    background-color: #4CAF50;
+    border: 3px double yellow;
+    box-shadow: 0 0 15px rgb(105, 105, 232);
+    width: 600px;
+    height: 50px;
+    margin-left: 150px;
+}
+.projectlanguage1{
+    background-color: #4CAF50;
+    border: 3px double yellow;
+    box-shadow: 0 0 15px rgb(105, 105, 232);
+    width: 600px;
+    height: 50px;
+    margin-left: 150px;
+}
+.projectoperating1{
+    background-color: #4CAF50;
+    border: 3px double yellow;
+    box-shadow: 0 0 15px rgb(105, 105, 232);
+    width: 600px;
+    height: 50px;
+    margin-left: 150px;
+}
+.projectdic{
+    background-color: #4CAF50;
+    border: 2px double yellow;
+    box-shadow: 0 0 10px rgb(105, 105, 232);
+    width: 600px;
+    height: 170px;
+    margin-left: 150px;
+}
+h2{
+    font-size: 30px;
+    color: aquamarine;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .main-text {
+        padding: 15px;
+    }
+}
+
+/* Contact*/
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 180px;
+}
+
+/* Styling for the contact text */
+.contact-text h2 {
+    color: #fff;
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+}
+.contact-text h2 span{
+    color:aquamarine;
+}
+.contact-text h4{
+    margin: 15px 0;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+.contact-text p{
+    margin: 15px 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+.contact-list{
+    margin-bottom: 3rem;
+}
+
+.contact-list li{
+    margin-bottom: 5px;
+    display: block;
+}
+.contact-list li{
+    color: #fff;
+    margin-bottom: 5px;
+    display: block;
+    margin-left: 20px;
+}
+.contact-list i{
+    display: inline-block;
+    color: aquamarine;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .40s ease;
+}
+.contact-list li:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: aquamarine;
+}
+.contact-icons i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid aquamarine;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aquamarine;
+    
+}
+.contact-icons i:hover{
+    background: aquamarine;
+    color: #000;
+    box-shadow: 0 0 20px aquamarine;
+}
+.contact-form form input,form textarea{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: white ;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+.contact-form textarea{
+    resize: none;
+    height: 220px;
+}
+.contact-form form .send{
+    display: inline-block;
+    padding: 12px 28px;
+    text-decoration: none;
+    color:#081b29;
+    background-color: aquamarine;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600; 
+}
+.contact-form form .send:hover{
+    box-shadow: 0 0 20px purple, 0 0 25px green, 0 0 50px red, 0 0 100px yellow, 0 0 200px aquamarine; 
+}
+
